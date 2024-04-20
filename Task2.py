@@ -15,7 +15,6 @@ france_values = pd.to_numeric(france_data)
 # Отримання років
 years = [int(year.split(' ')[0]) for year in ukraine_data.index]
 
-
 # Функція для побудови графіку динаміки популяції
 def plot_population_dynamics():
     plt.figure(figsize=(12, 6))
@@ -27,10 +26,6 @@ def plot_population_dynamics():
     plt.legend()
     plt.grid(True)
     plt.show()
-
-
-
-
 
 # Функція для побудови стовпчастої діаграми для вибраної країни
 def plot_bar_chart(country):
@@ -51,14 +46,6 @@ def plot_bar_chart(country):
     plt.ylabel('Population')
     plt.grid(True, axis='y')
     plt.show()
-
-
-# Виклик функції для візуалізації динаміки популяції
-#plot_population_dynamics()
-
-# Користувацький ввід для вибору країни
-#country_input = input("Enter the country (Ukraine or France): ")
-#plot_bar_chart(country_input)
 
 while True:
     print("\nМеню:")
